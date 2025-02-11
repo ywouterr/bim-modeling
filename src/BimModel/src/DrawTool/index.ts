@@ -139,6 +139,7 @@ export class DrawTool extends Component<string> implements Disposable {
       this.workPlane,
       "Window"
     );
+    /*/ logic for drawing beam /*/
     const beam = new StructureBeam(
       this.components,
       this.workPlane,
@@ -146,6 +147,7 @@ export class DrawTool extends Component<string> implements Disposable {
     );
     beam.initInstance(profiles);
     this.draws["Structure Beam"] = beam;
+    /*/logic for drawing beam /*/
     this.draws["Structure Column"] = new StructureColumn(
       this.components,
       this.workPlane,

@@ -33,7 +33,7 @@ export class Model {
   async init() {
     await this.ifcAPI.Init();
     this.ifcAPI.SetLogLevel(WEBIFC.LogLevel.LOG_LEVEL_OFF);
-    this._modelID = this.ifcAPI.CreateModel({schema: "IFC4X3_ADD2"});
+    this._modelID = this.ifcAPI.CreateModel({schema: "IFC4X3"});
   }
 
   set(item: WEBIFC.IfcLineObject) {
